@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/ReverseWords.java",
+      "run": "java -cp src ReverseWords",
+      "input": "Hello World Java",
+      "output": "Java World Hello",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Two Words",
+      "setup": "javac src/ReverseWords.java",
+      "run": "java -cp src ReverseWords",
+      "input": "Coding Challenge",
+      "output": "Challenge Coding",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Single Word",
+      "setup": "javac src/ReverseWords.java",
+      "run": "java -cp src ReverseWords",
+      "input": "Java",
+      "output": "Java",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Multiple Spaces (Robustness Check)",
+      "setup": "javac src/ReverseWords.java",
+      "run": "java -cp src ReverseWords",
+      "input": "Hello   World",
+      "output": "World Hello",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
