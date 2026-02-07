@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ReverseWords {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,17 +10,18 @@ public class ReverseWords {
 
         if (input.isEmpty()) return;
 
-        String[] words = input.split(" ");
+        // Split by one or more spaces
+        String[] words = input.split("\\s+");
 
-        StringBuilder result = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
         for (int i = words.length - 1; i >= 0; i--) {
-            result.append(words[i]);
+            sb.append(words[i]);
             if (i != 0) {
-                result.append(" ");
+                sb.append(" ");
             }
         }
 
-        System.out.print(result.toString());
+        System.out.print(sb.toString());
     }
 }
